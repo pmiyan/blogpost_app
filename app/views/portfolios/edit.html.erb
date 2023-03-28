@@ -1,0 +1,22 @@
+<h1> Edit this portfolio item</h1>
+
+<%= form_for(@portfolio_item) do |form| %>
+    <div>
+      <%= form.label :title, value: "Title:", style: "display: block" %>
+      <%= form.text_field :title %>
+    </div>
+
+    <div>
+      <%= form.label :subtitle, value: "SubTitle:", style: "display: block" %>
+      <%= form.text_field :subtitle %>
+    </div>
+  
+    <div>
+      <%= form.label :body, value: "Type content here:", style: "display: block" %>
+      <%= form.text_area :body %>
+    </div>
+  
+    <div>
+      <%= form.submit value="Update item!" %>
+    </div>
+<% end %>
